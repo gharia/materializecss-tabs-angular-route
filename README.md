@@ -34,6 +34,9 @@ Now along with **tab** class to your **ul**, add **angularTabs** class as shown 
 
 That's it. Now whenever you click on any tab, the location will change to href of the tab and the remote content will be loaded for that tab in ng-view with the help of routing functionality.
 
+Reference
+----
+[Materialize CSS] source code > tabs.js
 
 License
 ----
