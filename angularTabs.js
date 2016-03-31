@@ -17,7 +17,12 @@
 
         // If the location.hash matches one of the links, use that as the active tab.
         //in angular, location will be #/location. So need to remove /
+
         var currentRoute = String(location.hash).replace("/","");
+        if(currentRoute.indexOf("/") > 0){
+          currentRoute = currentRoute.substring(0,currentRoute.indexOf("/"));
+        }
+
         $active = $($links.filter('[href="'+currentRoute+'"]'));
 
         // If no match is found, use the first link or any with class 'active' as the initial active tab.
